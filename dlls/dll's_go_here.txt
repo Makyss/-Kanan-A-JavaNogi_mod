@@ -1,0 +1,2 @@
+Kanan has the ability to inject certian dll's into your Mabinogi game.
+If configuration of the dllLoader.js script is set up properly for each corrisponding dll you are injecting.
