@@ -1,5 +1,5 @@
 # Kanan's Mabinogi Mod
-Mods for Mabinogi using JavaScript
+The Kanan JavaNogi_mod..... .... TeeHee!
 
 ## Installation
 1. Download the repository by clicking the green **Clone or Download** button, and extract it anywhere on your computer. Alternatively you can download it through the Github desktop application.
