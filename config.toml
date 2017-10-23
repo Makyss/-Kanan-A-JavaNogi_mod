@@ -3,7 +3,7 @@
 directory = 'C:\Nexon\Library\mabinogi\appdata'
 args = 'code:1622 ver:259 logip:208.85.109.35 logport:11000 chatip:208.85.109.37 chatport:8002 setting:"file://data/features.xml=Regular, USA"' nxlauncher
 
-transformation Mastery to always stay
+#transformation Mastery to always stay
 #enabled (it would normally turn itself off when you change channels or relog).
 [AlwaysTransCollectMode]
 enable = true
@@ -169,7 +169,7 @@ height_cap = 2000
 enable = true
 coalesce = false
 delay = false
-fov = 90
+fov = 120
 
 #Allow the player to control the camera while inside a house or
 #other type of restricted area.
