@@ -1,9 +1,9 @@
 #Launch information for Mabinogi.
 [AutoStart]
 directory = 'C:\Nexon\Library\mabinogi\appdata'
-args = 'code:1622 ver:143 logip:208.85.109.35 logport:11000 chatip:208.85.109.37 chatport:8002 setting:"file://data/features.xml=Regular, USA"' 
+args = 'code:1622 ver:259 logip:208.85.109.35 logport:11000 chatip:208.85.109.37 chatport:8002 setting:"file://data/features.xml=Regular, USA"' nxlauncher
 
-#Causes the "Collect Mode" option for Transformation Mastery to always stay
+transformation Mastery to always stay
 #enabled (it would normally turn itself off when you change channels or relog).
 [AlwaysTransCollectMode]
 enable = true
@@ -19,7 +19,7 @@ coalesce = false
 delay = false
 net_interface = "Ethernet"
 net_interface2 = "Wi-Fi"
-low_mtu = 386
+low_mtu = 128
 norm_mtu = 1500
 
 #Changes Mabinogi's text rendering to the built-in bitmap fonts instead of the
@@ -27,19 +27,19 @@ norm_mtu = 1500
 #which is one of the major causes of FPS lag in the game.
 [BitmapFont]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #If true, Mabinogi will run in a "fake fullscreen" mode, maximized with no borders.
 [BorderlessWindowedMode]
-enable = true
+enable = false
 coalesce = false
 delay = true
 
 #Allows you to cancel the Lance Counter skill at will (you normally cannot).
 [CancelableLanceCounter]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #This mod disables the "Skip Repeated Messages For Network Stability" limit.
@@ -65,7 +65,7 @@ delay = false
 #HP shown on enemies, and much more.  It's not intended for daily use, since it
 #breaks some functionality (meant for dev testing purposes), so use with care.
 [ClientSideDevCat]
-enable = false
+enable = true
 coalesce = true
 delay = false
 
@@ -84,19 +84,13 @@ delay = false
 #Stops the screen from flashing white during certain attacks.
 [DisableScreenFlash]
 enable = true
-coalesce = true
-delay = false
-
-#A script that can load/inject additional DLLs.
-[DllLoader]
-enable = false 
 coalesce = false
 delay = false
 
 #This mod stops the CTRL+Mouse targeting system from snapping to friendly NPCs.
 [DontTargetNPCs]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Allow resizing the minimap when in any dungeon.
@@ -115,13 +109,13 @@ delay = false
 #Note that the setting only works if Mabinogi is fullscreen.
 [EnableFSAA]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Allows you to open various interfaces (shop, inventory) while dead.
 [EnableInterfaceWhileDead]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Allows zooming in and out on the minimap when on any large map.
@@ -140,8 +134,8 @@ delay = true
 #When holding ALT, names of items and entities around you are highlighted.
 #This mod greatly increases the range at which hightlighting occurs.
 [FarAltText]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Pressing the \ key turns the interface off, but sometimes the game
@@ -164,7 +158,7 @@ delay = false
 #around 2000 (the minimum) has the added benefit of instant takeoff.
 [FlightMaxChange]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 height_cap = 2000
 
@@ -173,22 +167,22 @@ height_cap = 2000
 #Values such as 120 make the game appear more 3D, adjust as desired.
 [FOVChange]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
-fov = 120
+fov = 90
 
 #Allow the player to control the camera while inside a house or
 #other type of restricted area.
 [FreeIndoorCamera]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Force the game to always render as if it was a specific time of day.
 #This is visual only, of course, and does not affect things like PTJs.
 [FreezeTimeOfDay]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 time_of_day = 12
 
@@ -208,14 +202,14 @@ delay = false
 #17 year old height is 1.0, Tin Potion height is -0.4, adjust as desired.
 [GlobalHeightOverride]
 enable = false 
-coalesce = true
+coalesce = false
 delay = false
 height = -0.4
 
 #Force the game to blank all main titles.
 [HideMainTitle]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Hide the black bars at the top and bottom of the screen when talking to NPCs.
@@ -228,19 +222,19 @@ delay = false
 #Not recommended for normal use.
 [HideObjects]
 enable = false
-coalesce = true
+coalesce = false
 delay = false
 
 #Force the game to blank all secondary titles.
 [HideSecondTitle]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Allow putting items on the hotkeys for quick use.
 [HotkeyAnyItem]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #The "Minimize Characters" setting in the game renders players as simple
@@ -248,7 +242,7 @@ delay = false
 #falls below a specified amount.  This mod makes it always happen regardless.
 [IgnoreMaintainFrame]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Stops the game from making objects, entities, and players transparent when
@@ -262,38 +256,38 @@ delay = false
 #Make most of the game's text slightly larger.  Does not affect bitmap fonts.
 [LargerTTFontResize]
 enable = false
-coalesce = true
+coalesce = false
 delay = false
 
 #Allows you to log out while talking to an NPC.
 [LogOutInConversation]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Lets Lance Counter stay activated longer.
 [LongerLanceCounter]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 lance_counter_time = 60000
 
 #Allow the Mabinogi window to be maximized/scaled up like normal windows.
 [MaximizeWindow]
-enable = false 
+enable = true 
 coalesce = false
 delay = true
 
 #Hide unlearned titles on the Title menu.
 [MiniTitleMenu]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Change the in-game clock to display minutes instead of 10-minute increments.
 [MinuteClock]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Allows you to change to the same channel you're currently on.
@@ -305,7 +299,7 @@ delay = false
 #Stops the commerce imp from talking to you while in commerce mode.
 [MuteCommerceImp]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Allows you to change channels when the game would normally prevent it.
@@ -324,14 +318,14 @@ delay = false
 #Prevent worn items from flashing if they have flashy colors.
 #Does not prevent inventory icons from flashing.
 [NoFlashyEquipment]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Prevent the game from going into or out of full screen mode.
 [NoFullscreenChange]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Disable the message warning you about being under a combat penalty
@@ -344,20 +338,20 @@ delay = false
 #Prevent the game from zooming the camera up close when you talk to a partner.
 [NoPartnerZoom]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Disables the confirmation message when you open up a personal shop.
 [NoPersonalShopCreationMsg]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Forces all players and all worn clothing (but not buildings) to render with
 #no translucency.  This turns some items opaque, which may not be desired.
 [NoPlayerZoomTransparency]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Disables the congratulations UI from showing up when you rank a skill.
@@ -369,17 +363,11 @@ delay = false
 #Don't render the sky/backdrop (possible FPS increase).
 [NoRenderSky]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Speed up text printing in NPC conversations.
 [NPCFastText]
-enable = true
-coalesce = true
-delay = false
-
-#Allow Elf Versus Giant PVP reviving with no confirmation window.
-[OneClickRevive]
 enable = true
 coalesce = true
 delay = false
@@ -393,13 +381,13 @@ delay = false
 #Stops the party joining/advertisement bar from timing out automatically.
 [PartyNoClose]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #This is not an actual mod.
 #This is a debugging script to help with development and updating.
 [PatternScanSnapshot]
-enable = false
+enable = true
 coalesce = false
 delay = true
 
@@ -415,20 +403,20 @@ delay = true
 #7 = Urgent shot
 [RangedAttackSwap]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
-swapped_skill = 0
+swapped_skill = 3
 
 #Remove "fog" from dungeon maps, making them always display as revealed.
 [RemoveDungeonFog]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Stops the screen from shaking when certain attacks hit, or certain enemies move.
 [RemoveScreenShake]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Modifies the game's render distance.  Increase it to see a lot more (at the
@@ -436,20 +424,20 @@ delay = false
 #in-game normally use a value of 15000 to 20000, for comparison.
 [RenderDistance]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
-range = 30000 
+range = 36000 
 
 #Make the shadow mission timer more precise, tracking seconds too.
 [SecondTimer]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Allow you to right-click yourself.
 [SelfRightClickable]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Displays CP (combat power) numerically on players and other entities.
@@ -461,43 +449,43 @@ delay = false
 #Makes the game show the current negative HP instead of "deadly".
 [ShowDeadlyHP]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Always display an item's built-in shop prices, as if it was in a shop.
 [ShowItemTradePrice]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Skip the graphics card warning message some users get when starting Mabinogi.
 [SkipGraphicsCardMsg]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Allows you to talk to your spirit weapon without holding it first.
 [TalkToEgo]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 #Removes the 20 item limit on auto production.
 [UncapAutoProduction]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Load game file overrides from the data folder.
 [UseDataFolder]
 enable = true
 coalesce = false
-delay = true
+delay = false
 
 #Allow viewing NPC and enemy equipment by right-clicking them.
 [ViewNPCEquipment]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Makes some interface windows display quicker.
@@ -509,7 +497,7 @@ delay = false
 #Removes the fog around the edge of render distance.
 [ZeroFogDistance]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Prevents the game from moving to the squad chat tab when joining a squad
@@ -517,18 +505,49 @@ delay = false
 #you can type in squad chat in the message log window manually if needed.
 [NoDefaultSquadChat]
 enable = true
-coalesce = true
+coalesce = false
 delay = false
 
 #Displays each item's class ID and attribute flag in the description.
 [ShowItemClass]
-enable = true
-coalesce = true
+enable = false
+coalesce = false
 delay = false
 
 # Removes chat censorship. Note, in public chat only other people with this mod
 # (or something similar) enabled will see your uncensored chat.
 [NoCensorship]
 enable = true
+coalesce = false
+delay = false
+
+# ENEMY CTRL HAS GREATER PRIORITY OVER NPC CTRL. 
+[CTRLFIX]
+enable = true
+coalesce = false
+delay = false
+
+# Java script by (Makyss) from mod_sharker patches.
+# Master debug function
+[DebugMaster]
+enable = true
+coalesce = false
+delay = false
+
+# Allow Elf Versus Giant PVP auto reviving with no confirmation window.
+[EvGAutoRevive]
+enable = true
+coalesce = false
+delay = false
+
+# Fixes Mana Tunnel Lag By Removing Position Marker (Makyss).
+[ManaTunnelLagFix]
+enable = true
 coalesce = true
+delay = false
+
+# No fade effects.
+[NoFade]
+enable = true
+coalesce = false
 delay = false
