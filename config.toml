@@ -1,7 +1,7 @@
 #Launch information for Mabinogi.
 [AutoStart]
 directory = 'C:\Nexon\Library\mabinogi\appdata'
-args = 'code:1622 ver:259 logip:208.85.109.35 logport:11000 chatip:208.85.109.37 chatport:8002 setting:"file://data/features.xml=Regular, USA"' nxlauncher
+args = 'code:1622 ver:259 logip:208.85.109.35 logport:11000 chatip:208.85.109.37 chatport:8002 setting:"file://data/features.xml=Regular, USA"'
 
 #transformation Mastery to always stay
 #enabled (it would normally turn itself off when you change channels or relog).
